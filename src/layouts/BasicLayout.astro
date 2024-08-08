@@ -1,0 +1,22 @@
+---
+
+---
+
+<div class='main-wrapper'>
+  <div class='content'>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .main-wrapper {
+    min-height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+</style>
