@@ -1,8 +1,9 @@
 ---
+const beautiful = "oklch(60.09% 0.165 328.24)"
 
 ---
 
-<h1>my css sketchbook</h1>
+<h1 class="test">my css sketchbook</h1>
 <p
   >I am going to use this website to practice the principles that I am learning in Josh Comeau's
   course. I have been through most of the content before but I am going through it again now and I
@@ -19,3 +20,13 @@
 <section>
   <h2>Here is another section</h2>
 </section>
+
+<style define:vars={{beautiful}}>
+
+/* --beautiful: ; */
+
+  .test {
+    color: var(--beautiful);
+    font-size: 64px;
+  }
+</style>
