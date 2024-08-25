@@ -1,6 +1,14 @@
 ---
 import LandingContent from '../components/astro/LandingContent.astro'
 import BasicLayout from '../layouts/BasicLayout.astro'
+// My color variables:
+const beautiful = "oklch(60.09% 0.165 328.24)"
+const greatGreen = "oklch(81.45% 0.1367 153.53)"
+const background = "oklch(97.33% 0 164.12)"
+const linkPink = "oklch(69.29% 0.1894 340.94 / 93.07%)"
+const linkHover = "oklch(57.12% 0.1708 349.41 / 89.82%)"
+// Color object for brevity
+const myColors = {beautiful, greatGreen, background, linkPink, linkHover}
 ---
 
 <html lang='en'>
@@ -18,7 +26,7 @@ import BasicLayout from '../layouts/BasicLayout.astro'
   </body>
 </html>
 
-<style is:global>
+<style is:global define:vars={myColors}>
 
 
   *,
