@@ -1,0 +1,31 @@
+---
+const people = [{name: "Diego Davis"}, {name: "Santiago Davis"}, { name: "Linda Davis" }, { name: "John Davis"}, { name:  "Maria Davis" }]
+import ContentLinks from './ContentLinks.astro'
+---
+
+
+<div class="container">
+    <div class="wrapper">
+        <ul>
+            <ContentLinks />
+            <ContentLinks />
+            <ContentLinks />
+            <ContentLinks />
+        </ul>
+    </div>
+</div>
+
+
+<style>
+    .container {
+        background-color: var(--blueBackGround);
+        height: 400px;
+        width: 800px;
+        border: solid 8px var(--borderPurple);
+        border-radius: 6px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+</style>
