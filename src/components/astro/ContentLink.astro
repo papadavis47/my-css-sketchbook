@@ -1,0 +1,13 @@
+---
+const {pageName, href} = Astro.props;
+---
+
+<li><a href={href}>{pageName}</a></li>
+
+<style>
+    li {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--beautiful);
+    }
+</style>
