@@ -1,11 +1,12 @@
 ---
-
+import BasicHeader from '../components/astro/BasicHeader.astro'
 ---
 
 <div class='main-wrapper'>
-  <div class='content'>
+  <BasicHeader />
+  <main class='content'>
     <slot />
-  </div>
+  </main>
 </div>
 
 <style >

@@ -1,10 +1,11 @@
 ---
 import TableOfContents from './TableOfContents.astro'
+import HorizontalSpacer from '../Helpers/HorizontalSpacer.astro'
 
 ---
 
-<div class="wrapper">
-  <h1 class="test">my css sketchbook</h1>
+<HorizontalSpacer>
+  <h2 class="heading">goals for this project</h2>
   <p
     >I am going to use this website to practice the principles that I am learning in Josh Comeau's
     course. I have been through most of the content before but I am going through it again now and I
@@ -24,19 +25,13 @@ import TableOfContents from './TableOfContents.astro'
     <h2>Here is another section</h2>
   </section>
   <TableOfContents />
-</div>
+</HorizontalSpacer>
 
 <style>
-  .wrapper {
-    max-width: 80%;
-    margin: 0 auto;
 
-  }
-
-
-  h1 {
+  .heading {
     color: var(--beautiful);
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   h2 {
